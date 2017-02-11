@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container-fluid .row {
+  text-align: center; }
+  .container-fluid .row .search {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 60px; }
+    .container-fluid .row .search .search-title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .container-fluid .row .search #postid {
+      width: 60%;
+      height: 38px;
+      line-height: 38px;
+      border: 2px solid #D2D2D2;
+      padding-left: 10px;
+      color: #999; }
+    .container-fluid .row .search .btn-search {
+      color: snow;
+      font-size: 15px;
+      font-weight: 600;
+      background: sandybrown;
+      width: 7%;
+      height: 38px;
+      line-height: 38px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 5%; }
+  .container-fluid .row .queryContext p {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400; }
+  .container-fluid .row .queryContext li {
+    list-style: none;
+    color: #828282;
+    font-size: 14px;
+    font: "Microsoft YaHei", Verdana, arial, sans-serif; }
+
+@media (min-width: 768px) {
+  .container-fluid .row .search .search-title {
+    font-size: 28px;
+    font-weight: 600; }
+
+  .container-fluid .row .search #postid {
+    width: 50%;
+    height: 54px;
+    line-height: 54px;
+    padding-left: 20px; }
+
+  .container-fluid .row .search .btn-search {
+    font-size: 19px;
+    font-weight: 600;
+    height: 54px;
+    line-height: 54px; }
+
+  .container-fluid .row .queryContext p {
+    font-size: 24px;
+    font-weight: 400; } }
+
+/*# sourceMappingURL=index.css.map */
