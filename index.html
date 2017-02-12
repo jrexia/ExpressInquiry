@@ -14,8 +14,22 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search">
                 <p class="search-title">快递单号查询</p>
-                <input type="text" name="postid" value="请输入快递单号" id="postid">
-                <a href="###" class="btn-search">查询</a>
+                <div class="search-con search-select ">
+                    <input type="text" name="selectid" value="请选择快递公司" id="selectid" class="ser-txt">
+                    <a href="###" class="btn-search" id="select-btn"><img src="Epress-down.png" alt=""></a>
+                </div>
+                <!--快递公司选项部分开始-->
+                <div id="company">
+                    <ul>
+                        <li v-for="item in items" v-on:click="toggle($index)">{{item.expName}}</li>
+                    </ul>
+                </div>
+                <!--快递公司选项部分结束-->
+                <div class="search-con">
+                    <input type="text" name="postid" value="请输入快递单号" id="postid" class="ser-txt">
+                    <a href="###" class="btn-search">查询</a>
+                </div>
+
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 queryContext" id="app">
                 <p>查询结果:</p>
